@@ -1,0 +1,64 @@
+{
+  "ambulances": [
+    {
+      "id": "A01",
+      "name": "Ambulance Alpha-01",
+      "status": "AVAILABLE",
+      "latitude": 10.8050,
+      "longitude": 78.6860,
+      "capability": "ALS",
+      "equipment": ["trauma_kit", "defibrillator", "oxygen", "ventilator_portable"],
+      "driver": "Rajan Kumar",
+      "phone": "+91-9876543001",
+      "distance_km": 2.4
+    },
+    {
+      "id": "A02",
+      "name": "Ambulance Bravo-02",
+      "status": "AVAILABLE",
+      "latitude": 10.7850,
+      "longitude": 78.7100,
+      "capability": "ALS",
+      "equipment": ["trauma_kit", "oxygen", "blood_bag"],
+      "driver": "Selvam Raj",
+      "phone": "+91-9876543002",
+      "distance_km": 3.1
+    },
+    {
+      "id": "A03",
+      "name": "Ambulance Charlie-03",
+      "status": "BUSY",
+      "latitude": 10.7960,
+      "longitude": 78.6980,
+      "capability": "BLS",
+      "equipment": ["first_aid", "oxygen"],
+      "driver": "Murugan S",
+      "phone": "+91-9876543003",
+      "distance_km": 1.8
+    },
+    {
+      "id": "A04",
+      "name": "Ambulance Delta-04",
+      "status": "AVAILABLE",
+      "latitude": 10.8010,
+      "longitude": 78.7150,
+      "capability": "BLS",
+      "equipment": ["first_aid", "stretcher"],
+      "driver": "Arjun Vel",
+      "phone": "+91-9876543004",
+      "distance_km": 5.1
+    },
+    {
+      "id": "A05",
+      "name": "Ambulance Echo-05",
+      "status": "AVAILABLE",
+      "latitude": 10.7920,
+      "longitude": 78.7200,
+      "capability": "BLS",
+      "equipment": ["first_aid", "oxygen"],
+      "driver": "Karthik R",
+      "phone": "+91-9876543005",
+      "distance_km": 6.3
+    }
+  ]
+}

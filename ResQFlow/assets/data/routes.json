@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {"id": "N01", "name": "Trichy Junction", "lat": 10.7905, "lng": 78.7047},
+    {"id": "N02", "name": "Chatram Bus Stand", "lat": 10.8010, "lng": 78.6840},
+    {"id": "N03", "name": "Chinthamani", "lat": 10.7960, "lng": 78.6980},
+    {"id": "N04", "name": "KK Nagar", "lat": 10.8100, "lng": 78.7100},
+    {"id": "N05", "name": "Thillai Nagar", "lat": 10.7850, "lng": 78.7200},
+    {"id": "N06", "name": "Woraiyur", "lat": 10.7750, "lng": 78.6950},
+    {"id": "N07", "name": "Srirangam", "lat": 10.8650, "lng": 78.6920},
+    {"id": "N08", "name": "Ariyamangalam", "lat": 10.7600, "lng": 78.7400},
+    {"id": "N09", "name": "Palpannai", "lat": 10.7950, "lng": 78.7150},
+    {"id": "N10", "name": "Cantonment", "lat": 10.8050, "lng": 78.6920},
+    {"id": "N11", "name": "Vayalur Road", "lat": 10.7880, "lng": 78.7020},
+    {"id": "N12", "name": "Sampathpuram", "lat": 10.8200, "lng": 78.7050},
+    {"id": "N13", "name": "Golden Rock", "lat": 10.7650, "lng": 78.7550},
+    {"id": "N14", "name": "Ponmalai", "lat": 10.7700, "lng": 78.7300},
+    {"id": "N15", "name": "Accident Site", "lat": 10.8030, "lng": 78.7000}
+  ],
+  "edges": [
+    {"from": "N01", "to": "N02", "distance_km": 1.8, "road_name": "Anna Salai"},
+    {"from": "N01", "to": "N03", "distance_km": 1.2, "road_name": "Vayalur Road"},
+    {"from": "N01", "to": "N11", "distance_km": 0.6, "road_name": "Junction Road"},
+    {"from": "N02", "to": "N04", "distance_km": 1.5, "road_name": "Lawsons Road"},
+    {"from": "N02", "to": "N10", "distance_km": 0.8, "road_name": "Cantonment Road"},
+    {"from": "N03", "to": "N05", "distance_km": 2.0, "road_name": "Thillai Nagar Main"},
+    {"from": "N03", "to": "N09", "distance_km": 1.0, "road_name": "Palpannai Road"},
+    {"from": "N04", "to": "N07", "distance_km": 3.2, "road_name": "Srirangam Road"},
+    {"from": "N04", "to": "N12", "distance_km": 1.1, "road_name": "KK Nagar Ext"},
+    {"from": "N05", "to": "N08", "distance_km": 2.4, "road_name": "Ariyamangalam Road"},
+    {"from": "N05", "to": "N09", "distance_km": 0.9, "road_name": "Inner Ring Road"},
+    {"from": "N06", "to": "N01", "distance_km": 1.6, "road_name": "Woraiyur Main"},
+    {"from": "N06", "to": "N11", "distance_km": 1.2, "road_name": "Hospital Road"},
+    {"from": "N07", "to": "N12", "distance_km": 2.8, "road_name": "Srirangam Bypass"},
+    {"from": "N08", "to": "N13", "distance_km": 1.8, "road_name": "Golden Rock Road"},
+    {"from": "N09", "to": "N15", "distance_km": 0.8, "road_name": "Accident Road"},
+    {"from": "N10", "to": "N15", "distance_km": 1.4, "road_name": "Cantonment Bypass"},
+    {"from": "N11", "to": "N15", "distance_km": 1.1, "road_name": "Vayalur Extension"},
+    {"from": "N12", "to": "N04", "distance_km": 1.1, "road_name": "Ring Road"},
+    {"from": "N13", "to": "N14", "distance_km": 1.3, "road_name": "Ponmalai Road"},
+    {"from": "N14", "to": "N05", "distance_km": 1.7, "road_name": "Thillai Link Road"},
+    {"from": "N15", "to": "N01", "distance_km": 1.5, "road_name": "Main Bypass"}
+  ],
+  "demo_routes": {
+    "primary": {
+      "name": "Primary Route",
+      "nodes": ["N01", "N11", "N15"],
+      "roads": ["Junction Road", "Vayalur Extension"],
+      "total_km": 1.7,
+      "eta_minutes": 8
+    },
+    "alternate_1": {
+      "name": "Alternate Route (Road Block Bypass)",
+      "nodes": ["N01", "N03", "N09", "N15"],
+      "roads": ["Vayalur Road", "Palpannai Road", "Accident Road"],
+      "total_km": 3.1,
+      "eta_minutes": 14
+    },
+    "alternate_2": {
+      "name": "Secondary Alternate",
+      "nodes": ["N01", "N02", "N10", "N15"],
+      "roads": ["Anna Salai", "Cantonment Road", "Cantonment Bypass"],
+      "total_km": 4.0,
+      "eta_minutes": 18
+    }
+  }
+}
